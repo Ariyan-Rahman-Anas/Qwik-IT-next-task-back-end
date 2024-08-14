@@ -63,7 +63,7 @@ const deleteABook = async (req, res) => {
         if (!deleting) {
             return res.status(404).json({ error: "Can't Delete, Item not found" })
         }
-        res.status(200).json({ deleting })
+        res.status(200).json({ message: "Book Deleted Successfully!" })
     } catch (error) {
         console.log(`Error deleting item with ID ${id}:`, error);
         res.status(404).json({ error: "Internal server error" })
