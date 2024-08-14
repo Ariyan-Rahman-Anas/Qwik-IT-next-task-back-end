@@ -11,7 +11,8 @@ const booksRouter = require("./src/route/bookRoute");
 // Basic middleware
 app.use(express.json());
 app.use(cors({
-    origin: "http://localhost:3000",
+    // origin: "http://localhost:3000",
+    origin: "https://qwik-it-next.vercel.app",
     credentials: true
 }));
 app.use(express.urlencoded({ extended: true }));
