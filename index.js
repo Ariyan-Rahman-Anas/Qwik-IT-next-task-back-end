@@ -12,7 +12,8 @@ const booksRouter = require("./src/route/bookRoute");
 app.use(express.json());
 app.use(cors({
     // origin: "http://localhost:3000",
-    origin: "https://qwik-it-next.vercel.app",
+    origin: "https://qwik-it-next.netlify.app",
+    // origin: "https://qwik-it-next.vercel.app",
     credentials: true
 }));
 app.use(express.urlencoded({ extended: true }));
